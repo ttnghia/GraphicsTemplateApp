@@ -10,4 +10,10 @@ A self-contained template for developing graphics application.
 * [ImGuizmo](https://github.com/CedricGuillemet/ImGuizmo)
 * [GLFW3](https://github.com/glfw/glfw)
 
-All libraries are provided in the form of submodules, and are already added in the cmake project.
+All libraries are provided in the form of submodules, and are already added in the cmake project. So, basically user doesn't need to install anything. Just open the cmake project and compile.
+
+# Template Applications
+There are three types of template applications:
+* Basic graphics application using Magnum OpenGL API and GLFW window
+* Graphics application with imgui
+* Graphics applicationi with imgui and pickable points
