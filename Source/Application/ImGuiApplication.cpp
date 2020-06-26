@@ -157,8 +157,13 @@ void ImGuiApplication::showMenuHeader() {
 }
 
 void ImGuiApplication::showMenuFooter(bool bButtonResetCamera) {
-    if(bButtonResetCamera && ImGui::Button("Reset camera")) {
-        m_Camera->reset();
+    if(bButtonResetCamera) {
+        ImGui::Spacing();
+        ImGui::Separator();
+        ImGui::Spacing();
+        if(ImGui::Button("Reset camera")) {
+            m_Camera->reset();
+        }
     }
     ImGui::End();
 }
