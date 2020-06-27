@@ -16,12 +16,12 @@
 
 #pragma once
 
+#include "Application/PickableApplication.h"
+#include "DrawableObjects/PickableObject.h"
+
 #include <Corrade/Containers/Array.h>
 #include <Magnum/GL/Mesh.h>
 #include <Magnum/Shaders/Phong.h>
-
-#include "Application/PickableApplication.h"
-#include "DrawableObjects/PickableObject.h"
 
 /****************************************************************************************************/
 class MyApplication final : public PickableApplication  {

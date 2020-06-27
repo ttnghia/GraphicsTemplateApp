@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
+#include "DrawableObjects/PickableObject.h"
+#include "MyApplication.h"
+
 #include <Corrade/Containers/GrowableArray.h>
 #include <Magnum/GL/DefaultFramebuffer.h>
 #include <Magnum/MeshTools/Compile.h>
 #include <Magnum/Trade/MeshData.h>
 #include <Magnum/Primitives/Icosphere.h>
-
-#include "DrawableObjects/PickableObject.h"
-#include "MyApplication.h"
 
 using namespace Magnum::Math::Literals;
 
