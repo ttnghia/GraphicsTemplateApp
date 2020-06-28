@@ -16,4 +16,4 @@ All libraries are provided in the form of submodules, and are already added in t
 There are three types of template applications:
 * Basic graphics application using Magnum OpenGL API and GLFW window
 * Graphics application with imgui
-* Graphics applicationi with imgui and pickable points
+* Graphics application with imgui and pickable points
