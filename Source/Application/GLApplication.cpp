@@ -40,6 +40,16 @@ GLApplication::GLApplication(const std::string& title, const Arguments& argument
     GL::Renderer::setClearColor(m_BkgColor);
     setSwapInterval(1);
 
+    /* Move the window to center */
+    GLFWmonitor* const monitor = glfwGetPrimaryMonitor();
+    const GLFWvidmode* mode    = glfwGetVideoMode(monitor);
+    CORRADE_INTERNAL_ASSERT(mode != nullptr);
+    int monitorX, monitorY;
+    glfwGetMonitorPos(monitor, &monitorX, &monitorY);
+    glfwSetWindowPos(window(),
+                     monitorX + (mode->width - defaultWindowSize.x()) / 2,
+                     monitorY + (mode->height - defaultWindowSize.y()) / 2);
+
     /* Setup scene objects and camera */
     m_Grid.emplace(&m_Scene, &m_Drawables);
 
