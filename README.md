@@ -17,3 +17,5 @@ There are three types of template applications:
 * Basic graphics application using Magnum OpenGL API and GLFW window
 * Graphics application with imgui
 * Graphics application with imgui and pickable points
+
+![Screenshot](https://ttnghia.github.io/images/graphics-template-app/1.png)
