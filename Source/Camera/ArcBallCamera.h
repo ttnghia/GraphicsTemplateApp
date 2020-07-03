@@ -38,7 +38,7 @@ public:
         (*(_camera = new SceneGraph::Camera3D{ *cameraObject }))
             .setAspectRatioPolicy(SceneGraph::AspectRatioPolicy::Extend)
             .setProjectionMatrix(Matrix4::perspectiveProjection(
-                                     fov, Vector2{ windowSize }.aspectRatio(), 0.01f, 100.0f))
+                                     fov, Vector2{ windowSize }.aspectRatio(), 0.01f, 1000.0f))
             .setViewport(viewportSize);
 
         /* Save the abstract transformation interface and initialize the

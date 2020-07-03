@@ -148,7 +148,9 @@ void ImGuiApplication::showMenuHeader() {
     }
     ImGui::Spacing();
     ImGui::Checkbox("Render grid", &m_Grid->enabled());
-    ImGui::ColorEdit3("Background color", m_BkgColor.data());
+    if(ImGui::ColorEdit3("Background color", m_BkgColor.data())) {
+        GL::Renderer::setClearColor(m_BkgColor);
+    }
 
     ImGui::Spacing();
     ImGui::Separator();
